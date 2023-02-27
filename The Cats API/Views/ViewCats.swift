@@ -23,6 +23,7 @@ struct ViewCats: View {
 					VStack {
 						if catViewModel.cats.isEmpty {
 							//show emptyState
+							Text("There's no cats to play with :(")
 						} else {
 							ForEach(catViewModel.cats, id:\.breedName) { cat in
 								CatCard(cat: cat, geo: geo)
