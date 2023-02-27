@@ -38,8 +38,6 @@ struct ViewCats: View {
 			Task {
 				isLoading.toggle()
 				await catViewModel.getCats()
-				print(catViewModel.cats.count)
-				print(catViewModel.cats[0].imageUrl)
 				isLoading.toggle()
 			}
 		}
